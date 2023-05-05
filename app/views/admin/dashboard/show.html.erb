@@ -1,2 +1,9 @@
+<header class="page-header">
 <h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+</header>
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Site Stats</h4>
+  <p>There is a total of <strong><%= Category.count %></strong> <%= Category.count == 1 ? "category" : "categories" %> of products in the database.</p>
+  <hr>
+  <p class="mb-0">Total number of products: <strong><%= Product.count %></strong>.</p>
+</div>
