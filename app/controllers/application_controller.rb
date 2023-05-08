@@ -36,6 +36,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def authorize
-    redirect_to '/login' unless current_user
+    redirect_to '/login' unless session[:user_id]
   end
+  helper_method :authorize
 end
