@@ -57,6 +57,8 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'rspec-rails', '~> 5.1'
   gem 'net-smtp', require: false
+  gem "cypress-rails"
+  gem 'database_cleaner-active_record'
 end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
